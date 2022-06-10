@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "clusterName": {
-            "value": "<ClusterResourceName>"
+            "value": "<YOUR-CLUSTER-RESOURCE-NAME>"
         },
         "applicationTypeVersionFabricObserver": {
-            "value": "3.1.24"
+            "value": "3.2.0"
         },
         "packageUrlFabricObserver": {
-            "value": "https://github.com/microsoft/service-fabric-observer/releases/download/51751968/Microsoft.ServiceFabricApps.FabricObserver.Windows.SelfContained.3.1.24.sfpkg"
+            "value": "<PUBLIC-ACCESSIBLE-URL-FOR-FABRICOBSERVER-SFPKG>"
         }
     }
 }

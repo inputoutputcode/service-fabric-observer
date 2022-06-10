@@ -6,10 +6,10 @@
             "value": "<ClusterResourceName>"
         },
         "applicationTypeVersionClusterObserver": {
-            "value": "X.X.XX"
+            "value": "<CLUSTEROBSERVER-VERSION-NUMBER>"
         },
         "packageUrlClusterObserver": {
-            "value": "https://github.com/microsoft/service-fabric-observer/releases/download/51751968/Microsoft.ServiceFabricApps.ClusterObserver.Windows.SelfContained.X.X.XX.sfpkg"
+            "value": "<PUBLIC-ACCESSIBLE-URL-FOR-CLUSTEROBSERVER-SFPKG>"
         }
     }
 }

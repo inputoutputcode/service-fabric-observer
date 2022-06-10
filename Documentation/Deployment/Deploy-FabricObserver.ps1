@@ -1,5 +1,5 @@
 ﻿
-$subscriptionId = "" 
+$subscriptionId = "<YOUR-AZURE-SUBSCRIPTION-ID>" 
 Try {
   Select-AzSubscription -SubscriptionId $subscriptionId -ErrorAction Stop
 } Catch {
@@ -7,11 +7,11 @@ Try {
     Set-AzContext -SubscriptionId $subscriptionId
 }
 
-$resourceGroup = "chrpap171850-group"
+$resourceGroup = "<YOUR-CLUSTER-RESOURCE-NAME>"
 $armTemplate = "service-fabric-observer.json"
-$armTemplateParameters = "service-fabric-observer.v3.1.20.parameters.json"
+$armTemplateParameters = "service-fabric-observer.v3.2.0.parameters.json"
 
-cd "D:\Code\inputoutputcode\service-fabric-observer\Documentation\Deployment"
+cd "D:\git\service-fabric-observer\Documentation\Deployment"
 
 New-AzResourceGroupDeployment -Name "deploy-service-fabric-observer" -ResourceGroupName $resourceGroup -TemplateFile $armTemplate -TemplateParameterFile $armTemplateParameters -Verbose -Mode Incremental
 
